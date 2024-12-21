@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "DroidKufi";
+  src: url("../fonts/DroidKufi-Regular.ttf");
+}
+
+:root {
+  --primaryColor: #FE6059;
+  --secondaryColor: #1dc3f6;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --boxShadow: 5px 4px 9px #dfdfdf;
+  --droidKufi: "DroidKufi";
+  --robotoFonts: "Roboto";
+  --sectionPadding: 80px 0px;
+}
+
+* {
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1700px;
+  font-family: "Roboto", sans-serif;
+  /* color: blueviolet;
+  font-size: 18px; */
+  /* line-height: 4; */
+  /* margin: 20px;
+  background-color: #990866; */
+}
+
+.second-para {
+  background-color: blueviolet;
+  font-size: 20px;
+}
+
+/*
+    testing comment
+   */
+
+.aboutUs p {
+  background-color: blue;
+  color: white;
+}
+
+.sliderBanner {
+  /* background-color: blue; */
+  /* background-color: rgb(172, 43, 211); */
+  /* background-color: #fff; */
+  /* background-color: 	hsl(15, 100%, 50%); */
+  /* background-color: #FE6059; */
+
+  /* background-image: url(../images/banners/slider-1.jpg);
+    min-height: 450px;
+    background-repeat: no-repeat; */
+
+  /* repeat-x  OR repeat-y OR repeat */
+  /* 
+    background-image: url(../images/fav.jpg);
+    min-height: 450px;
+    background-repeat: repeat-x; */
+
+  /* scroll  OR fixed */
+
+  /* background-image: url(../images/portfolio/portfolio-3.png);
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: scroll; */
+
+  /*  200px from x   and  100px: from y; */
+  /* 
+    background-image: url(../images/portfolio/portfolio-3.png);
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 200px 100px; */
+
+  /* background-image: url(../images/fav.jpg);
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-color: #FE6059;
+    background-position: top left; */
+
+  /* auto OR  cover  OR contain */
+  /* background-image: url(../images/banners/slider-1.jpg);
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+  /* background-image: url(../images/portfolio/portfolio-1.png);
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: 558px 558px; */
+}
+
+.box-sizing {
+  background-color: aqua;
+  width: 500px;
+  height: 350px;
+
+  /* padding internal spaces */
+  /* padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; */
+
+  /* padding: 50px; */
+
+  /* top - right - bottom - left */
+  /* padding: 50px 50px 30px 70px;  */
+
+  /* top: 40 - right:10 - bottom: 40- left: 10 */
+  padding: 40px 10px;
+
+  /* ___________________________ */
+
+  /* margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px; */
+
+  /* margin: 50px;  */
+
+  /* top - right - bottom - left */
+  /* margin: 50px 50px 30px 70px; */
+
+  margin: 40px 10px;
+
+  /* ___________________________ */
+
+  /* solid - dotted - dashed*/
+  /* border: 5px dashed #000; */
+  /* outline: 5px dashed #000; */
+
+  /* border-radius: 20px; */
+  /* border-radius: 20px 0px 20px 0px; */
+
+  /* outline: 5px dashed #000; 
+ outline-offset: 10px; */
+}
+
+/* ------------------------------------------------------------------- */
+
+/* 
+    div: display block element
+    - take full width
+    - take height
+    - take padding
+    - take margin
+
+*/
+.first-element {
+  background-color: red;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+.second-element {
+  background-color: blue;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* 
+    span: display inline element
+    - didn't take full width
+    - didn't take height
+    - take padding
+    - take only margin [right - left]
+
+*/
+.first-element-span {
+  background-color: green;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+.second-element-span {
+  background-color: purple;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* display:inline-block have a mix between inline & block*/
+.d-inline-element-one {
+  background-color: turquoise;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+.d-inline-element-two {
+  background-color: brown;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* -------------------------- Element visibility  ----------------------------------------- */
+/* visibility: hidden; display:none */
+.element-visible-one {
+  background-color: chartreuse;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  visibility: hidden;
+}
+.element-visible-two {
+  background-color: deeppink;
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#services {
+  background-color: #858585;
+  padding: 30px;
+}
+
+#services .container {
+  width: 400px;
+  background-color: #eee;
+}
+/* #services .container img{
+    width: 400px;
+  border-radius: 20px;
+} */
+#services .container .cover {
+  width: 400px;
+  border-radius: 20px;
+}
+
+#services .container h1 {
+  color: #990866;
+}
+
+#services .container p {
+  font-size: 17px;
+  color: #333;
+}
+
+/* -------------------------- width & height & overflow----------------------------------------- */
+.dimensionalSection {
+  background-color: red;
+  padding: 10px;
+  /*
+  width: 350px;
+  height: 200px;
+  */
+  /*
+  min-width: 350px;
+  min-height: 200px;
+   */
+  /* max-width: 650px;
+   max-height: 500px; */
+
+  /* width: auto;
+   height: auto; */
+
+  width: 350px;
+  height: 200px;
+  /* overflow:auto; */
+  overflow-y: auto;
+  /* overflow:scroll; */
+  /* overflow-x:scroll; */
+  /* overflow-y:hidden; */
+}
+
+/* -------------------------- Shadowing && Fonts && spacing ----------------------------------------- */
+
+.shadowSection {
+  min-width: 350px;
+  min-height: 200px;
+  overflow-y: auto;
+  background-color: #eee;
+  box-shadow: 5px 4px 9px #dfdfdf;
+}
+.shadowSection p {
+  /* text-shadow: 2px 0px 5px #333;
+  color: blue; */
+  /* text-decoration: underline; */
+  /* text-decoration: line-through;
+  text-decoration: underline 1px dashed #000; */
+}
+
+.shadowSection .fontOne {
+  font-family: "Anton";
+  font-weight: 400;
+  font-size: 30px;
+  /* letter-spacing: 4px; */
+  /* word-spacing: 10px; */
+  /* line-height: 2; */
+}
+.shadowSection .fontTwo {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+}
+.shadowSection .fontThree {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.arabicFont {
+  font-family: "DroidKufi";
+  font-size: 25px;
+}
+
+/* -------------------------- inheritance ----------------------------------------- */
+/* 
+inherited properties: 
+- font-size
+- color
+- line-height
+
+none-inherited properties: 
+- margin 
+- padding
+- border
+- background
+- width
+- height
+*/
+
+/* -------------------------- css units----------------------------------------- */
+/* 
+  px (pixel):
+  - is a fixed unit for measuring
+
+  vw (viewport width):
+  - is percentage for the viewport width.
+  
+  rem (Root element):
+  - relative measuring unit for the root element (<html>) 
+
+  em (time): 
+
+  % : is percentage for the parent element
+*/
+
+/* html {
+  font-size: 40px;
+} */
+/* body {
+  font-size: 20px;
+} */
+
+.unitsSection {
+  width: 550px;
+  min-height: 300px;
+  background-color: red;
+  font-size: 30px;
+}
+
+.unitsSection .first-paragraph {
+  /* font-size:30px; */
+
+  /* resize your browser */
+  /* font-size: 4vw; */
+
+  /* font-size: 2rem; */
+
+  /* font-size: 3em; */
+
+  /* font-size: 50%; */
+}
+
+/* -------------------------- box shadow (Done Before ) & Box Model ----------------------------------------- */
+.boxModel {
+  background-color: green;
+  padding: 10px;
+  margin: 30px;
+  width: 450px;
+  height: 300px;
+  border: 5px solid #000;
+}
+
+/* -------------------------- Float, clear ----------------------------------------- */
+header {
+  background-color: green;
+  /* overflow: hidden; */
+  /* height: 70px; */
+}
+
+header .mainNav {
+  padding: 0px;
+  margin: 0px;
+}
+header .mainNav .item {
+  width: 25%;
+  display: inline;
+  background-color: red;
+  float: right;
+  box-sizing: border-box;
+}
+header .mainNav .item a {
+  color: #fff;
+}
+
+.blogs {
+  background-color: #990866;
+}
+
+.blogs .article {
+  width: calc(
+    100% / 3 - 20px
+  ); /* Subtract margins to fit three articles in a row */
+  height: 360px;
+  background-color: aqua;
+  margin-bottom: 10px;
+  float: left;
+  margin: 10px;
+}
+.clear {
+  clear: both;
+}
+
+/* -------------------------- Position ----------------------------------------- */
+/* 
+ static:
+  - didn't work with top , bottom , right, left, z-index
+  - works with margin-top, margin-bottom, padding
+
+ relative:
+ - work with top , bottom , right, left
+ - works with margin-top, margin-bottom, padding
+
+
+ absolute:
+ - work with top , bottom , right, left
+ - works with margin-top, margin-bottom, padding
+
+ fixed:
+ - work with top , bottom , right, left
+ - works with margin-top, margin-bottom, padding
+*/
+
+.elementOne,
+.elementTwo,
+.elementThree,
+.elementFour {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+.elementOne {
+  background-color: red;
+
+  /* position: static;
+  margin-top: 200px; */
+
+  /* position: relative;
+  margin-top: 200px; */
+
+  /* position: absolute;
+  top: 200px; */
+
+  /* position: fixed;
+  top: 200px; */
+}
+.elementTwo {
+  background-color: blue;
+}
+
+.mainSection {
+  width: 650px;
+  height: 3000px;
+  background-color: aquamarine;
+  position: relative;
+}
+/* .elementOne {
+  position: relative;
+  margin-left: 300px ;
+} */
+
+/* .elementOne {
+  position: absolute;
+  right: 100px;
+}
+*/
+.elementThree {
+  background-color: #990866;
+}
+
+/* z-index */
+
+.elementOne {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+}
+
+.elementTwo {
+  position: absolute;
+  z-index: 3;
+  left: 12px;
+}
+
+.elementThree {
+  position: absolute;
+  z-index: 4;
+}
+
+.elementFour {
+  background-color: rgb(128, 51, 0);
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+/* -------------------------- variables in css ----------------------------------------- */
+.about-us {
+  background-color: var(--primaryColor);
+  padding: var(--sectionPadding);
+  box-shadow: var(--boxShadow);
+}
+
+.about-us h1 {
+  color: var(--secondaryColor);
+  font-family: var(--robotoFonts);
+}
+
+/* -------------------------- Transition ----------------------------------------- */
+.transitionSec {
+  width: 400px;
+  height: 350px;
+  background-color: var(--primaryColor);
+  padding: 20px;
+  /* transition-duration: 1s; */
+  /* transition-delay: 3s; */
+  /* transition-property: width, height, margin-left; */
+  /* transition-timing-function:  ease-in-out;*/ /*linear  */
+
+  transition: all 1s 3s ease-in-out;
+}
+
+.transitionSec:hover {
+  width: 550px;
+  margin-left: 100px;
+  height: 400px;
+}
+
+.siteNav {
+  list-style: none;
+}
+.siteNav li a{
+  transition: all 1s linear;
+}
+.siteNav li a:hover{
+  background-color: #990866;
+  color: #fff;
+  text-decoration: none;
+}
+/* -------------------------- flex ----------------------------------------- */
+/* 
+// for parent
+ - display: flex;
+ - flex-direction: row; row-reverse; column ; column-reverse;
+ - flex-wrap: wrap; nowrap;
+ - justify-content: center; start; end, flex-end, space-around, space-between;space-evenly
+ - align-items: flex-start;flex-end;center;
+
+ // control child : 
+ - align-content: start;end, center
+ - flex-grow: 2;
+ - flex-shrink: 3;
+ - order: 3;
+ - flex-basis: 200px;
+*/
+.flex-parent {
+  background-color: #eee;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row nowrap;
+
+/*   
+  flex-direction: row;
+  flex-wrap: wrap; */
+
+  /* flex-flow: row nowrap;
+  justify-content: space-evenly; */
+
+  /* height: 400px;
+  align-items: center; */
+
+  height: 400px;
+}
+
+/* .flex-parent .flex-child {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  width: calc(100% / 4);
+  margin-right: 2px;
+align-content: flex-start
+} */
+
+/* -------------------------   filters  ------------------------------ */
+.filterSec {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.filterSec img {
+  width: 100%;
+  /* filter: grayscale(100%); */
+  /* filter: invert(1); */
+  /* filter: blur(4px); */
+}
+
+.filterSec img:hover {
+  /* filter: grayscale(0%); */
+  /* filter: invert(0); */
+  /* filter: blur(0px); */
+}
+
+/* -------------------------   gradient  ------------------------------ */
+/* 
+https://www.google.com/search?q=css+gradient+generator&sca_esv=a5eb3d1e7cbb0edf&sxsrf=ADLYWIL_JOFUA5e5bO_l4s9ezco4Ttjdtg%3A1729778307598&source=hp&ei=g1IaZ4njIZfOhbIPi-PveA&iflsig=AL9hbdgAAAAAZxpgk7UV2ArscrJKwW_Y3Qjb8dJcI0g2&oq=css+gradient+&gs_lp=Egdnd3Mtd2l6Ig1jc3MgZ3JhZGllbnQgKgIIADIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywFI9mtQkANY_VtwBHgAkAEAmAHQAaABlg6qAQYwLjEyLjG4AQPIAQD4AQH4AQKYAhGgAvAOqAIKwgIHECMYJxjqAsICChAjGIAEGCcYigXCAgQQIxgnwgIOEAAYgAQYsQMYgwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBixAxiDARjUAsICBRAAGIAEwgILEC4YgAQYsQMY1ALCAg4QLhiABBjHARjLARivAcICChAAGIAEGAoYywHCAgYQABgWGB7CAggQABiABBiiBMICBxAAGIAEGA3CAgYQABgNGB6YAwySBwY0LjEyLjGgB-01&sclient=gws-wiz
+*/
+.gradientSec {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  /* background: linear-gradient(to top, red, green); */
+  /* background: linear-gradient(to bottom, #fff 2%, #fff 5% , #f1f1f1 10%, #1dc3f6 100%); */
+
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+/* background: linear-gradient(45deg,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ 
+background-image: linear-gradient(to right top, #cfcdce, #d9aeb0, #d49577, #ad8b37, #5e8800);
+
+}
+
+/*********************************************/
+.opacity-sec {
+  width: 500px;
+  height: 350px;
+  /* background-color: #000;
+  opacity: .5; */
+
+  /* background-color: rgba(0, 0, 0, .5); */
+}
+.opacity-sec p {
+  color: green;
+  font-size: 20px;
+}
+
+/********************** css selectors ***********************/
+/* 
+  - elements [div , p , h1]
+  - element inside div like p
+  - #id-selector
+  - .class-selector
+  - .parent .child : any child
+  - .parent > .child : direct child
+
+  - .class-one-selector.class-two-selector
+  - .class-selector div =>>>>> means get all div inside class-selector
+  - .class-selector div , .class-selector p  =>>>>> means get all div and p inside class-selector
+  - element.class-selector  =>>>>> means only p with this class-selector will apply this changes
+
+  - div + p  =>>>>> means the next selector to div is must be p 
+  - p ~ div =>>>>> means  is a sibling combinator selector الأشقاء ليه في نفس الاب علي نفس مستواه 
+  - [attribute],  also you can make it with value [attribute = value] 
+  - element[attribute],   also you can make it with value element[attribute = value] 
+  - [attribute~= value]  contains a word
+  - [attribute*= value]  contains a string
+  - [attribute^= value]  start a string
+
+*/
+
+.largePadding {
+  padding: 50px 0px;
+}
+p {
+  font-family: var(--robotoFonts);
+}
+.about-info {
+  background-color: #eee;
+}
+.about-info h1 {
+  color: red;
+}
+/* 
+.about-info p {
+  font-size: 18px;
+} */
+
+.about-info > p {
+  font-size: 25px;
+}
+#aboutSection {
+  margin: 30px auto;
+}
+
+/* .about-info.largePadding {
+  color: green !important;
+} */
+
+/* p.about-text{
+  color: blue;
+} */
+
+/* .about-info.largePadding {
+  color: red;
+} */
+
+/* div + p {
+  background-color: yellow;
+} */
+
+/* p ~ div{
+  background-color: blue;
+} */
+ 
+/* p[element-data="test"] {
+  background-color: red;
+} */
+
+/* p[element-data~="test"] {
+  background-color: red;
+} */
+
+/* p[element-data*="test"] {
+  background-color: red;
+} */
+
+p[element-data^="test"] {
+  background-color: red;
+}
+/* ******************** */
+#blog {
+  p {
+    background-color: red;
+  }
+}

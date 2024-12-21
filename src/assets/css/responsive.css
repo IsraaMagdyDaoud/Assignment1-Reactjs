@@ -1,0 +1,43 @@
+/* mobile screens */
+@media (max-width: 767px) {
+    article {
+        background-color: red;
+    }
+}
+
+
+/* small screens */
+@media (min-width: 768px) {
+    article {
+        background-color: blue;
+    }
+}
+
+/* medium screens */
+@media (min-width: 992px) {
+    article {
+        background-color: green;
+    }
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+    article{
+        background-color: #e1e1e1;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* medium screens */
+/* @media (min-width: 768px) and (max-width: 992px) {
+    article {
+        background-color: green;
+    }
+} */
+
+/* @media (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+    article {
+        background-color: green;
+    }
+} */

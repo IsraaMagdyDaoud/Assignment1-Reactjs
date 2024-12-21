@@ -1,0 +1,18 @@
+.edit-post-form {
+    position: relative;
+    background-color: #eee;
+    padding: 10px;
+}
+.edit-post-form button {
+    width: 100%;
+}
+.edit-post-form textarea {
+   resize: vertical;
+}
+.modalFooter {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.modalFooter button {
+  min-width: 125px;
+}

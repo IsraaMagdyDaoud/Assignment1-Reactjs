@@ -1,0 +1,6 @@
+@media print {
+    body {
+        background-color: red;
+    }
+    .mainNav {display: none;}
+}

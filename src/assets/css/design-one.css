@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "DroidKufi";
+  src: url("../fonts/DroidKufi-Regular.ttf");
+}
+
+:root {
+  --primaryColor: #FE6059;
+  --secondaryColor: #1dc3f6;
+  --greyColor: #eee;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --boxShadow: 5px 4px 9px #dfdfdf;
+  --droidKufi: "DroidKufi";
+  --robotoFonts: "Roboto";
+  --sectionPadding: 80px 0px;
+}
+
+* {
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1700px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* header */
+header {
+    background-color: var(--greyColor);
+    padding: 25px;
+    text-align: center;
+}
+
+/* mainNav */
+.mainNav {
+    float: left;
+    width: 30%;
+    background-color: #858282;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.mainNav ul {
+    list-style: none;
+}
+
+.mainNav ul li {
+    margin-bottom: 10px;
+}
+.mainNav ul li a {
+    text-decoration: none;
+    color: var(--blackColor);
+}
+article {
+    float: left;
+    width: 70%;
+    background-color: #e1e1e1;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media (max-width: 992px) {
+    article, .mainNav  {
+        width: 100%;
+        min-height:auto;
+    }
+}
+
+
+/* footer */
+footer {
+    background-color: var(--blackColor);
+    text-align: center;
+    color: var(--whiteColor);
+    padding: 20px;
+}

@@ -1,0 +1,8 @@
+.mainContainer {
+    min-height: 650px;
+}
+.navbar-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+}

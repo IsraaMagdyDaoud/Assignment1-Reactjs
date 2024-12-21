@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "DroidKufi";
+  src: url("../fonts/DroidKufi-Regular.ttf");
+}
+
+:root {
+  --primaryColor: #fe6059;
+  --secondaryColor: #1dc3f6;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --boxShadow: 5px 4px 9px #dfdfdf;
+  --droidKufi: "DroidKufi";
+  --robotoFonts: "Roboto";
+  --sectionPadding: 80px 0px;
+}
+
+* {
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1700px;
+  font-family: "Roboto", sans-serif;
+}
+/* --------------------- pseudo-classes: ----------------------- */
+.menu-url {
+  color: green;
+  text-decoration: none;
+  cursor: help;
+}
+.menu-url:hover {
+  color: red;
+}
+.menu-url:visited {
+  color: blue;
+}
+.accept-terms:checked + div {
+  color: blue;
+  display: none;
+}
+
+.empty-paragraph:empty {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.user-name:focus {
+  border: 3px solid red;
+  outline: none;
+}
+button:disabled {
+  /* border: 3px solid #333; */
+  cursor: not-allowed;
+}
+
+/* --------------------- pseudo-elements:: ----------------------- */
+.about-us::first-letter {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.more-info::first-line {
+  background-color: green;
+  color: yellow;
+  font-weight: bold;
+}
+
+.about-us::selection {
+  background-color: #fe6059;
+  color: #333;
+}
+
+/* before & after */
+.element-info {
+  background-color: #eee;
+  padding: 10px;
+  width: 500px;
+  position: relative;
+  float: left;
+  margin: 50px;
+}
+.element-info::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 0px;
+  width: 10px;
+  height: 100%;
+  right: 0px;
+}
+
+/* .element-info::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  left: -20px;
+  top: 38%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #d8d8d8 transparent transparent;
+} */
+
+.element-info {
+  background-color: #eee;
+  padding: 10px 0px 0px 50px;
+  width: 500px;
+  position: relative;
+  float: left;
+  margin: 50px;
+}
+.element-info::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 70px;
+  height: 70px;
+  left: -30px;
+  top: 18%;
+  border-radius: 50%;
+}
+/* -------------------------------------------- */
+/* .company-info p:first-child {
+  color: red;
+}
+
+.company-info p:last-child {
+  color: red;
+}
+
+.company-info p:first-of-type{
+  background-color: yellow;
+}
+
+.company-info p:last-of-type{
+  background-color: yellow;
+}
+
+.company-info div:only-of-type {
+  background-color: red;
+}
+
+ div:only-child {
+  font-size: 30px;
+} */
+
+
+/* .company-info p:not(:first-child) {
+  background-color: red;
+} */
+
+/* .company-info p:nth-child(even) {
+  background-color: red;
+} */
+
+/* .company-info p:nth-child(odd) {
+  background-color: red;
+} */
+
+/* .company-info p:nth-last-child(3) {
+  background-color: red;
+} */
+
+
+/* .company-info p:nth-child(1) {
+  background-color: red;
+} */
+
+/* .company-info p:nth-of-type(2) {
+  background-color: red;
+} */
