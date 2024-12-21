@@ -1,0 +1,36 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.detailsBox {
+  width: 400px;
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.detailsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.detailsBody {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.loading {
+  font-size: 20px;
+  color: #555555;
+}

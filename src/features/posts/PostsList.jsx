@@ -94,7 +94,7 @@ function PostsList() {
                   <div className="card post-item" key={post.id}>
                     <div className="card-body">
                       <h5>
-                        <Link to="/details" className="link">
+                        <Link to={`/details/${post.id}`} className="link">
                           {post.id} - {post.title}
                         </Link>
                       </h5>
